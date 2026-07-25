@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Post List</title>
+</head>
+<body>
+      <h1><a href="create_post/"><button>Create Post</button></a></h1>
+      {% for  post in post_summary %}
+      <h1>{{post.title}}</h1>
+      <p>{{post.content}} <a href="{% url 'post_detail' post.id%}">Read More....</a></p>
+      {% endfor %}
+</body>
+</html>
