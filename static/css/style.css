@@ -1,0 +1,186 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f6f9;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+/* Header */
+
+header{
+    background:#2563eb;
+    color:#fff;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+    margin-bottom:30px;
+}
+
+header h1{
+    font-size:32px;
+}
+
+/* Search Form */
+
+.search-form{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:25px;
+}
+
+.search-form input,
+.search-form select{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    flex:1;
+}
+
+.search-form button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.search-form button:hover{
+    background:#1d4ed8;
+}
+
+/* Card */
+
+.card{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.card h2{
+    margin-bottom:10px;
+}
+
+.card p{
+    margin-bottom:15px;
+}
+
+.card small{
+    color:#666;
+}
+
+/* Button */
+
+.btn{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    padding:10px 18px;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+/* Form */
+
+form{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+form input,
+form textarea,
+form select{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+textarea{
+    resize:vertical;
+    min-height:180px;
+}
+
+form button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+form button:hover{
+    background:#1d4ed8;
+}
+
+/* Detail */
+
+.post-detail{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.post-detail h1{
+    margin-bottom:20px;
+}
+
+.post-detail p{
+    margin:20px 0;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    margin-top:40px;
+    color:#777;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .search-form{
+        flex-direction:column;
+    }
+
+    header h1{
+        font-size:24px;
+    }
+
+    .container{
+        width:95%;
+    }
+
+}
